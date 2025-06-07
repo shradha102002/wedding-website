@@ -7,14 +7,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export default function ServicesPage() {
-  const [activeService, setActiveService] = useState<number | null>(null);
+  const [activeService, setActiveService] = useState(null); // ✅ Removed TS type for JS
 
   const services = [
     {
       src: '/v6.jpg',
       title: 'WEDDING PLANNING & MANAGEMENT',
-      description:
-        'At Evoke Event & Wedding Planners, we bring your dream wedding to life...',
+      description: 'At Evoke Event & Wedding Planners, we bring your dream wedding to life...',
       link: '/wedding/wedding-planning',
     },
     {

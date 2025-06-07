@@ -33,7 +33,7 @@ export default function BlogDetail() {
           <h2 className="text-3xl font-bold mb-4">Expert Insights by Evoke Event Co.</h2>
           <p className="text-gray-700 mb-4">
             Planning a wedding in 2025? Whether you dream of a grand destination wedding or a personalized ceremony at home, staying updated with the latest trends is essential.
-            At <strong>Evoke Event Co.</strong>, recognized among the <Link href="wedding">Best Wedding Planners</Link> near you, we bring you the freshest ideas, innovative styling, and expert coordination to make your big day extraordinary...
+            At <strong>Evoke Event Co.</strong>, recognized among the <Link href="/wedding">Best Wedding Planners</Link> near you, we bring you the freshest ideas, innovative styling, and expert coordination to make your big day extraordinary...
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4">1. Sustainable Weddings: Style Meets Consciousness</h3>
@@ -45,8 +45,6 @@ export default function BlogDetail() {
           <p className="text-gray-700 mb-4">
             Smaller guest lists mean more budget per guest, allowing for exquisite catering, personalized favors, and curated entertainment experiences...
           </p>
-
-          {/* Add more content sections as needed */}
         </div>
 
         {/* Sidebar */}
@@ -54,26 +52,26 @@ export default function BlogDetail() {
           <h3 className="text-xl font-bold mb-4">Recent Posts</h3>
           <ul className="space-y-4">
             <li>
-              <Link href="/blogs/top-10-wedding-trends-2025" className="text-purple-700 hover:underline">
-                Top 10 Wedding Trends to Watch in 2025
+              <Link href="/blogs/top-10-wedding-trends-2025">
+                <span className="text-purple-700 hover:underline">Top 10 Wedding Trends to Watch in 2025</span>
               </Link>
               <p className="text-sm text-gray-500">April 29, 2025</p>
             </li>
             <li>
-              <Link href="/blogs/smart-wedding-budget-tips" className="text-purple-700 hover:underline">
-                Smart Wedding Budget Planning: Tips from the Best Wedding Planners in Bhopal
+              <Link href="/blogs/smart-wedding-budget-tips">
+                <span className="text-purple-700 hover:underline">Smart Wedding Budget Planning: Tips from the Best Wedding Planners in Bhopal</span>
               </Link>
               <p className="text-sm text-gray-500">April 27, 2025</p>
             </li>
             <li>
-              <Link href="/blogs/haldi-ceremony-ideas" className="text-purple-700 hover:underline">
-                Haldi Ceremony Magic: Vibrant Ideas & Planning Tips
+              <Link href="/blogs/haldi-ceremony-ideas">
+                <span className="text-purple-700 hover:underline">Haldi Ceremony Magic: Vibrant Ideas & Planning Tips</span>
               </Link>
               <p className="text-sm text-gray-500">April 15, 2025</p>
             </li>
             <li>
-              <Link href="/blogs/professional-wedding-planner" className="text-purple-700 hover:underline">
-                Why Hire a Professional Wedding Planner for Your Big Day
+              <Link href="/blogs/professional-wedding-planner">
+                <span className="text-purple-700 hover:underline">Why Hire a Professional Wedding Planner for Your Big Day</span>
               </Link>
               <p className="text-sm text-gray-500">April 5, 2025</p>
             </li>

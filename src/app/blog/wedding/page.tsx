@@ -33,7 +33,7 @@ export default function BlogDetail() {
           <h2 className="text-3xl font-bold mb-4">Expert Insights by Evoke Event Co.</h2>
           <p className="text-gray-700 mb-4">
             Planning a wedding in 2025? Whether you dream of a grand destination wedding or a personalized ceremony at home, staying updated with the latest trends is essential.
-            At <strong>Evoke Event Co.</strong>, recognized among the <Link href="wedding">Best Wedding Planners</Link> near you, we bring you the freshest ideas, innovative styling, and expert coordination to make your big day extraordinary...
+            At <strong>Evoke Event Co.</strong>, recognized among the <Link href="/wedding">Best Wedding Planners</Link> near you, we bring you the freshest ideas, innovative styling, and expert coordination to make your big day extraordinary...
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4">1. Sustainable Weddings: Style Meets Consciousness</h3>
@@ -45,8 +45,6 @@ export default function BlogDetail() {
           <p className="text-gray-700 mb-4">
             Smaller guest lists mean more budget per guest, allowing for exquisite catering, personalized favors, and curated entertainment experiences...
           </p>
-
-          {/* Add more content sections as needed */}
         </div>
 
         {/* Sidebar */}
