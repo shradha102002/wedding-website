@@ -1,68 +1,69 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Header from '@/components/Header';
-import Footer from '@/components/footer';
-import Image from 'next/image';
-import Link from 'next/link';
+import { useState } from "react";
+import Header from "@/components/Header";
+import Footer from "@/components/footer";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function ServicesPage() {
-  const [activeService, setActiveService] = useState(null); // ✅ Removed TS type for JS
+  // Removed activeService since it's unused
+  // const [activeService, setActiveService] = useState(null);
 
   const services = [
     {
-      src: '/v6.jpg',
-      title: 'WEDDING PLANNING & MANAGEMENT',
-      description: 'At Evoke Event & Wedding Planners, we bring your dream wedding to life...',
-      link: '/wedding/wedding-planning',
+      src: "/v6.jpg",
+      title: "WEDDING PLANNING & MANAGEMENT",
+      description: "At Evoke Event & Wedding Planners, we bring your dream wedding to life...",
+      link: "/wedding/wedding-planning",
     },
     {
-      src: '/web12.jpg',
-      title: 'CORPORATE EVENTS',
-      description: 'Whether it’s a high-profile conference...',
-      link: '/services/corporate-events',
+      src: "/web12.jpg",
+      title: "CORPORATE EVENTS",
+      description: "Whether it’s a high-profile conference...",
+      link: "/services/corporate-events",
     },
     {
-      src: '/a4.jpg',
-      title: 'THEME PARTIES',
-      description: 'Let your imagination run wild!',
-      link: '/services/theme-parties',
+      src: "/a4.jpg",
+      title: "THEME PARTIES",
+      description: "Let your imagination run wild!",
+      link: "/services/theme-parties",
     },
     {
-      src: '/b3.jpg',
-      title: 'BIRTHDAY CELEBRATIONS',
-      description: 'Make birthdays extra special...',
-      link: '/services/birthday-celebrations',
+      src: "/b3.jpg",
+      title: "BIRTHDAY CELEBRATIONS",
+      description: "Make birthdays extra special...",
+      link: "/services/birthday-celebrations",
     },
     {
-      src: '/a1.jpg',
-      title: 'ANNIVERSARY EVENTS',
-      description: 'Celebrate love and togetherness...',
-      link: '/services/anniversary-events',
+      src: "/a1.jpg",
+      title: "ANNIVERSARY EVENTS",
+      description: "Celebrate love and togetherness...",
+      link: "/services/anniversary-events",
     },
     {
-      src: '/b9.jpg',
-      title: 'BABY SHOWERS',
-      description: 'Welcome the newest member of your family...',
-      link: '/services/baby-showers',
+      src: "/b9.jpg",
+      title: "BABY SHOWERS",
+      description: "Welcome the newest member of your family...",
+      link: "/services/baby-showers",
     },
     {
-      src: '/v35.jpg',
-      title: 'HOSPITALITY & GUEST MANAGEMENT',
-      description: 'Ensure a seamless experience for your guests...',
-      link: '/services/hospitality-management',
+      src: "/v35.jpg",
+      title: "HOSPITALITY & GUEST MANAGEMENT",
+      description: "Ensure a seamless experience for your guests...",
+      link: "/services/hospitality-management",
     },
     {
-      src: '/g1.jpg',
-      title: 'TRADITIONAL & SOCIAL EVENTS',
-      description: 'Embrace the beauty of culture and tradition...',
-      link: '/services/traditional-events',
+      src: "/g1.jpg",
+      title: "TRADITIONAL & SOCIAL EVENTS",
+      description: "Embrace the beauty of culture and tradition...",
+      link: "/services/traditional-events",
     },
     {
-      src: '/c3.jpg',
-      title: 'MUSIC EVENTS',
-      description: 'Ignite the stage with electrifying music events!',
-      link: '/services/music-events',
+      src: "/c3.jpg",
+      title: "MUSIC EVENTS",
+      description: "Ignite the stage with electrifying music events!",
+      link: "/services/music-events",
     },
   ];
 
@@ -72,7 +73,7 @@ export default function ServicesPage() {
 
       <section
         className="services-hero bg-cover text-center py-24"
-        style={{ backgroundImage: 'url(/ar1.jpg)' }}
+        style={{ backgroundImage: "url(/ar1.jpg)" }}
       >
         <h1 className="text-white text-4xl font-bold">SERVICES</h1>
         <p className="text-white mt-2">HOME / SERVICES</p>

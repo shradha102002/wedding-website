@@ -1,4 +1,27 @@
+"use client";
+
+import { useState } from "react";
+
 export default function CallbackForm() {
+  const [formData, setFormData] = useState({
+    name: "",
+    contactNumber: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // For now just alert the data (you can replace this with API call)
+    alert(`Name: ${formData.name}\nContact Number: ${formData.contactNumber}\nMessage: ${formData.message}`);
+    // Reset form (optional)
+    setFormData({ name: "", contactNumber: "", message: "" });
+  };
+
   return (
     <section className="bg-black text-white py-16 px-4 sm:px-6 lg:px-8 text-center">
       <p className="text-pink-700 italic text-lg mb-2">Personalized Assistance</p>
@@ -15,9 +38,12 @@ export default function CallbackForm() {
         how we can make your event memorable and stress-free.
       </p>
 
-      <form className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 text-black">
+      <form onSubmit={handleSubmit} className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 text-black">
         <input
           type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
           placeholder="Name *"
           required
           className="w-full p-3 border border-white bg-transparent text-white placeholder-white focus:outline-none focus:border-pink-700"
@@ -25,12 +51,18 @@ export default function CallbackForm() {
 
         <input
           type="tel"
+          name="contactNumber"
+          value={formData.contactNumber}
+          onChange={handleChange}
           placeholder="Contact Number *"
           required
           className="w-full p-3 border border-white bg-transparent text-white placeholder-white focus:outline-none focus:border-pink-700"
         />
 
         <textarea
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
           placeholder="Message *"
           required
           rows={1}

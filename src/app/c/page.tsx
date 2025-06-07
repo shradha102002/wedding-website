@@ -29,7 +29,11 @@ export default function BlogDetail() {
       <section className="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Left Blog Content */}
         <div className="lg:col-span-2">
-          <img src="/images/blog1.jpg" alt="Blog Main" className="w-full h-96 object-cover mb-8" />
+          <img
+            src="/images/blog1.jpg"
+            alt="Blog Main"
+            className="w-full h-96 object-cover mb-8"
+          />
           <h2 className="text-3xl font-bold mb-4">Expert Insights by Evoke Event Co.</h2>
           <p className="text-gray-700 mb-4">
             Planning a wedding in 2025? Whether you dream of a grand destination wedding or a personalized ceremony at home, staying updated with the latest trends is essential.
@@ -38,7 +42,7 @@ export default function BlogDetail() {
 
           <h3 className="text-2xl font-bold mt-8 mb-4">1. Sustainable Weddings: Style Meets Consciousness</h3>
           <p className="text-gray-700 mb-4">
-            Eco-friendly weddings are not just a trend—they're a statement. Couples are now opting for digital invitations, reusable décor, biodegradable confetti, and zero-waste catering. These elegant green weddings combine tradition with responsibility...
+            Eco-friendly weddings are not just a trend—they&rsquo;re a statement. Couples are now opting for digital invitations, reusable décor, biodegradable confetti, and zero-waste catering. These elegant green weddings combine tradition with responsibility...
           </p>
 
           <h3 className="text-2xl font-bold mt-8 mb-4">2. Micro Weddings with High-End Detailing</h3>
@@ -65,7 +69,7 @@ export default function BlogDetail() {
             </li>
             <li>
               <Link href="/blogs/haldi-ceremony-ideas">
-                <span className="text-purple-700 hover:underline">Haldi Ceremony Magic: Vibrant Ideas & Planning Tips</span>
+                <span className="text-purple-700 hover:underline">Haldi Ceremony Magic: Vibrant Ideas &amp; Planning Tips</span>
               </Link>
               <p className="text-sm text-gray-500">April 15, 2025</p>
             </li>
@@ -79,16 +83,16 @@ export default function BlogDetail() {
 
           {/* Social Links */}
           <div className="flex space-x-4 mt-8">
-            <a href="#" target="_blank">
+            <a href="#" target="_blank" rel="noreferrer">
               <img src="/icons/facebook.svg" alt="Facebook" className="w-6 h-6" />
             </a>
-            <a href="#" target="_blank">
+            <a href="#" target="_blank" rel="noreferrer">
               <img src="/icons/instagram.svg" alt="Instagram" className="w-6 h-6" />
             </a>
-            <a href="#" target="_blank">
+            <a href="#" target="_blank" rel="noreferrer">
               <img src="/icons/linkedin.svg" alt="LinkedIn" className="w-6 h-6" />
             </a>
-            <a href="#" target="_blank">
+            <a href="#" target="_blank" rel="noreferrer">
               <img src="/icons/youtube.svg" alt="YouTube" className="w-6 h-6" />
             </a>
           </div>
